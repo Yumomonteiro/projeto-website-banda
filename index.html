@@ -8,9 +8,122 @@
     <meta name="description" content="Site de avaliação para a primeira prova prática na master D">
     <title>O terno - Banda indie/rock </title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <div class="dropdown">
+                    <button class="drop-btn">
+                        ALBUNS
+                        <i class="material-symbols-outlined">
+                            arrow_drop_down
+                        </i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="https://oterno.bandcamp.com/album/atr-s-al-m">atrás/além</a>
+                        <a href="https://oterno.bandcamp.com/album/melhor-do-que-parece">Melhor do que parece</a>
+                        <a href="https://oterno.bandcamp.com/album/o-terno">O terno (2014)</a>
+                    </div>
+                </div>
+                <li><a href="#">A BANDA</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="top-article">
+            <div class="biografia">
+                <h1>O terno</h1>
+                <p>Do brasil para o mundo</p>
+                <p>O Terno é uma banda de rock de São Paulo, formada por Tim Bernardes, Guilherme D'Almeida e Gabriel Basile. Em junho de 2012, lançou seu primeiro disco, 66, de forma independente. Desde seu lançamento, o disco foi muito bem avaliado, sendo considerado pelo jornal O <i class="sublinhados">Globo</i> como "um dos mais impressionantes discos de estreia de uma banda brasileira" e colocado entre os 25 melhores álbuns brasileiros de 2012 pela revista Rolling Stone Brasil. O disco contêm 5 músicas autorais e 5 músicas escritas por Maurício Pereira, com arranjos do trio.</p>
+            </div>
+            <div class="albuns">
+                <h2>DISCOGRAFIA</h2>
+                <div class="content-albuns">
+                    
+                    
+                    <div class="item-box">
+                        <img src="imagens/album-o-terno-2014.jpg" alt="imagem do album da banda o terno">
+                        <div class="description">O terno - 2014</div>
+                    </div>
+                    <div class="item-box">
+                        <img src="imagens/album-melhor-do-que-parece-o-terno.jpg" alt="imagem do album da banda o terno melhor do que parece">
+                        <div class="description">Melhor do que parece - 2016</div>
+                    </div>
+                    <div class="item-box">
+                        <img src="imagens/album-atras-alem--o-terno.jpg" alt="imagem do album da banda o terno atrás/além">
+                        <div class="description">Atrás/além - 2019</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>PROXIMOS SHOWS</h2>
+            <h3>RESERVE SEU BILHETE</h3>
+            <div class="shows-center">
+                <div class="meses-shows">
+
+                </div>
+                <div class="location-show-box">
+                    <div class="show-box">
+                            <img src="imagens/imagem-show1.jpg" alt="imagem show da banda o terno">
+                            <div class="description-box">
+                                <h4>Lisboa</h4>
+                                <p>Coliseu dos recreios</p>
+                                <p>concerto coliseu dos recreios em Lisboa</p>
+                                <button class="btn-box">Comprar bilhetes</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-box">
+                        <img src="imagens/imagem 3.jpg" alt="imagem banda o terno">
+                        <div class="description-box">
+                            <h4>Porto</h4>
+                            <p>Coliseu dos recreios</p>
+                            <p>Concerto coliseu dos recreios no Porto</p>
+                            <button class="btn-box">Comprar bilhetes</button>
+                        </div>
+                    <div class="show box">
+                        <img src="imagens/imagem show 2.jpg" alt="imagem show da banda o terno">
+                        <div class="description-box">
+                            <h4>Coimbra</h4>
+                            <p>Estádio múnicipal de Coimbra</p>
+                            <p>Concerto Estádio Municipal de coimbra</p>
+                            <button class="btn-box">Comprar bilhetes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>CONTACTOS</h2>
+            <p>Receba novidades dos próximos shows!</p>
+            <div>
+                <div class="contactos">
+                    <p><i class="material-symbols-outlined">distance</i>Rio de Janeiro , Brasil</p>
+                    <p><i class="material-symbols-outlined">phone</i>Telefone: +123 456 789</p>
+                    <p><i class="material-symbols-outlined">email</i>Email: oterno@contacto.com</p>
+                </div>
+                <div class="form">
+                    <form action="cadastro.php">
+                        <input type="text" name="nome" id="inome" placeholder="Nome">
+                        <input type="email" name="email" id="iemail" placeholder="E-mail"> <br>
+                        <input type="text" name="local" id="ilocal" placeholder="Mensagem"> <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="redes-sociais">
+
+        </div>
+        <div class="creator"><p>Site criado por <a href="https://github.com/Yumomonteiro">Yuri Monteiro</a></p></div>
+    </footer>
 </body>
 </html>
