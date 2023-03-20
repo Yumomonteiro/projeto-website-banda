@@ -7,7 +7,298 @@
     
 }
 * {
-    padding: 0;
+
     margin: 0;
     box-sizing: border-box;
+    font-family: 'roboto' , sans-serif;
 }
+
+.nav-bar {
+    height: 100%;
+    background-color: black;
+    display: flex;
+    
+    justify-content: space-between;
+
+    
+    
+}
+
+.nav-bar > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.nav-bar > ul > li{
+    padding: 15px;
+}
+
+.nav-bar > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 15px 20px;
+}
+
+.nav-bar > ul > li > a:hover {
+    color: black;
+    background-color: white;
+}   
+
+.dropdown {
+    height: 100%;
+}
+
+.dropdown > .drop-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    background-color: inherit;
+    padding: 0px 15px;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dddddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+
+
+
+.dropdown-content > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown > .drop-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-content > a:hover {
+    background-color:  #000000b9;
+    color: white;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.btn-nav {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 16px;
+    padding: 0px 30px;
+    
+}
+
+
+
+.btn-nav:hover {
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 66vw;
+    
+}
+
+.biografia {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.biografia > h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.biografia > .paragrafo-bottom-tittle {
+    color: #8583838e;
+    padding: 20px;
+    font-style: italic;
+}
+
+p.p-descricao-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.albuns > h2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 33px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.content-albuns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item-box {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.item-box > a > img{    
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    transition: transform 0.2s ease;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.267);
+}
+
+.description{
+    transition: transform 0.2s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 8px;
+}
+
+.item-box > a > img:hover {
+    transform: scale(1.03);
+}
+
+.middle-article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.middle-article > h2 {
+    padding: 30px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.middle-article > h3 {
+    color: rgba(255, 255, 255, 0.521);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.shows-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 66vw;
+}
+
+.meses-shows {
+    background-color: white;
+    width: 100%;
+    color: rgb(75, 75, 75);
+}
+
+span.sold-out{
+    background-color: red;
+    color: white;
+}
+
+.meses-disponiveis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.meses {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.bilhetes-disponiveis {
+    position: relative;
+    left: 80px;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 50%;
+    font-size: 12px;
+    
+}
+
+
+
+.location-show-box {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}   M
+,
+. s how-box {
+    width: 320px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.show-box > img {
+   width:  320px;
+}
+
