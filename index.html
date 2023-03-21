@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Yuri Monteiro">
-    <meta name="description" content="Site de avaliação para a primeira prova prática na master D">
+    <meta name="description" content="Site sobre a banda de rock/indie denominada O terno">
     <title>O terno - Banda indie/rock </title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/estilos/media-query.css">
 </head>
 <body>
     <header>
@@ -61,59 +62,70 @@
             </div>
         </article>
         <article class="middle-article">
-            <h2>Tour</h2>
-            <h3>Reserve seu bilhete</h3>
+            <div class="tittle-middle">
+                <h2>Tour</h2>
+                <h3>Reserve seu bilhete</h3>
+            </div>
             <div class="shows-center">
                 <div class="meses-shows">
                     <div class="meses"><p>Setembro, 2023 <span class="sold-out">Sold out</span></p></div>
                     <div class="meses"><p>Outubro, 2023 <span class="sold-out">Sold out</span></p></div>
-                    <div class="meses-disponiveis"><p>Novembro, 2023 <span class="bilhetes-disponiveis">200 bilhetes</span></p></div>
+                    <div class="meses-disponiveis"><p>Novembro, 2023 </p><span class="bilhetes-disponiveis">200 bilhetes</span></div>
                 </div>
                 <div class="location-show-box">
                     <div class="show-box">
-                            <div class="img-box" id="img1"><img src="imagens/imagem-show1.jpg" alt="imagem show da banda o terno"></div>
-                            <div class="description-box">
-                                <h4>Lisboa</h4>
-                                <p>Coliseu dos recreios</p>
-                                <p>concerto coliseu dos recreios em Lisboa</p>
-                                <button class="btn-box">Comprar bilhetes</button>
-                            </div>
+                        <div  class="img-box"><img src="imagens/imagem-show1.jpg" alt="imagem show da banda o terno"></div>
+                        <div class="description-box">
+                             <h4>Lisboa</h4>
+                             <p class="paragrafo-desc-opacidade">Coliseu dos recreios</p>
+                            <p class="paragrafo-location">Concerto coliseu dos recreios em Lisboa</p>
+                            <button class="btn-box">Comprar bilhetes</button>
+                        </div>                      
                     </div>
                     <div class="show-box">
-                        <div class="img-box" id="img2"><img src="imagens/imagem 3.jpg" alt="imagem banda o terno"></div>
+                        <div class="img-box"><img src="imagens/imagem 3.jpg" alt="imagem banda o terno"></div>
                         <div class="description-box">
                             <h4>Porto</h4>
-                            <p>Coliseu dos recreios</p>
-                            <p>Concerto coliseu dos recreios no Porto</p>
+                            <p class="paragrafo-desc-opacidade">Coliseu dos recreios</p>
+                            <p class="paragrafo-location">Concerto coliseu dos recreios no Porto</p>
                             <button class="btn-box">Comprar bilhetes</button>
                         </div>
+                        
                     </div>
                     <div class="show-box">
-                        <div class="img-box" id="img3"><img src="imagens/imagem show 2.jpg" alt="imagem show da banda o terno"></div>
-                        <div class="description-box"\>
+                        <div class="img-box"><img src="imagens/imagem show 2.jpg" alt="imagem show da banda o terno"></div>
+                        <div class="description-box">
                             <h4>Coimbra</h4>
-                            <p>Estádio múnicipal de Coimbra</p>
-                            <p>Concerto Estádio Municipal de coimbra</p>
+                            <p class="paragrafo-desc-opacidade">Estádio múnicipal de Coimbra</p>
+                            <p class="paragrafo-location">Concerto Estádio Municipal de coimbra</p>
                             <button class="btn-box">Comprar bilhetes</button>
                         </div>
+                       
                     </div>
                 </div>
             </div>
         </article>
-        <article>
+        <article class="bottom-article">
             <h2>CONTACTOS</h2>
-            <p>Receba novidades dos próximos shows!</p>
-            <div>
-                <div class="contactos">
-                    <p><i class="material-symbols-outlined">distance</i>Rio de Janeiro , Brasil</p>
-                    <p><i class="material-symbols-outlined">phone</i>Telefone: +123 456 789</p>
-                    <p><i class="material-symbols-outlined">email</i>Email: oterno@contacto.com</p>
+            <p id="paragrafo-article-bottom">Receba novidades dos próximos shows!</p>
+            <div class="bottom-contato-form">
+                <div class="contactos-symbols">
+                    <div class="icones-article-bottom">
+                        <i class="material-symbols-outlined">distance</i>
+                        <i class="material-symbols-outlined">phone</i>
+                        <i class="material-symbols-outlined">email</i>
+                    </div>
+                    <div class="contactos">
+                        <p>Rio de Janeiro , Brasil</p>
+                        <p>Telefone: +123 456 789</p>
+                        <p>Email: oterno@contacto.com</p>
+                    </div>
                 </div>
                 <div class="form">
                     <form action="cadastro.php">
                         <input type="text" name="nome" id="inome" placeholder="Nome">
                         <input type="email" name="email" id="iemail" placeholder="E-mail"> <br>
-                        <input type="text" name="local" id="ilocal" placeholder="Mensagem"> <br>
+                        <input type="text" name="local" id="imensagem" placeholder="Mensagem"> <br>
                         <input type="submit" value="Enviar">
                     </form>
                 </div>

@@ -1,3 +1,8 @@
+
+@font-face {
+    font-family:'merienda' ;
+    src: url(../fonts/Merienda/Merienda-VariableFont_wght.ttf);
+}
 @font-face {
     font-family: 'roboto';
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -13,15 +18,16 @@
     font-family: 'roboto' , sans-serif;
 }
 
+header {
+    
+}
+
 .nav-bar {
-    height: 100%;
+    width: 100%;
     background-color: black;
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: space-between;
-
-    
-    
 }
 
 .nav-bar > ul {
@@ -30,6 +36,7 @@
     justify-content: center;
     align-items: center;
     padding: 0px 40px;
+    flex-wrap: wrap;
 }
 
 .nav-bar > ul > li{
@@ -132,7 +139,7 @@ section {
 
 .biografia {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0px;
 }
 
 .biografia > h1 {
@@ -144,8 +151,8 @@ section {
 
 .biografia > .paragrafo-bottom-tittle {
     color: #8583838e;
-    padding: 20px;
     font-style: italic;
+    padding: 20px;
 }
 
 p.p-descricao-title {
@@ -207,27 +214,39 @@ p.p-descricao-title {
 
 .middle-article{
     width: 100%;
+    height: 900px;
     display: flex;
     flex-direction: column;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif;
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgb(0, 0, 0);
     color: white;
     justify-content: center;
     align-items: center;
     font-weight: lighter;
     letter-spacing: 2px;
-    margin-top: 30px;
+    margin: 40px 0px;
+    padding-bottom: 80px;
 }
 
-.middle-article > h2 {
+.tittle-middle {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    bottom: 45px;
+}
+
+.tittle-middle > h2 {
+    text-align: center;
     padding: 30px 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'merienda', Geneva, Tahoma, sans-serif;
+   
 }
 
-.middle-article > h3 {
+.tittle-middle > h3 {
     color: rgba(255, 255, 255, 0.521);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+    padding-bottom: 5px;
 }
 .shows-center {
     display: flex;
@@ -261,16 +280,13 @@ span.sold-out{
 }
 
 .bilhetes-disponiveis {
-    position: relative;
-    left: 80px;
     text-align: center;
     display: inline-block;
-    width: 120px;
+    width: 150px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    font-size: 12px;
-    
+    font-size: 16px;
 }
 
 
@@ -284,21 +300,181 @@ span.sold-out{
     flex-direction: row;
     flex-wrap: wrap;
     
-}   M
-,
-. s how-box {
-    width: 320px;
-    height: 370px;
+}  
+
+.show-box {
+    width: 340px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding:0px 20px;
     margin-top: 10px;
     border: 1px solid black;
+    background-color: white;
+    color: black;
 }
 
-.show-box > img {
-   width:  320px;
+.img-box {
+    display: flex;
+    align-items: end;
+    justify-content: last baseline;
 }
 
+.show-box > div > img {
+   width:  340px;
+   height: 220px;
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.description-box > h4 {
+    padding: 20px 0px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+
+}
+
+.paragrafo-desc-opacidade {
+    color: rgba(0, 0, 0, 0.342);
+    padding: 10px 0px;
+}
+
+.paragrafo-location {
+    padding: 10px 0px;
+}
+
+.btn-box {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-box:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.603);
+    cursor: pointer;
+}
+
+.bottom-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-article > h2 {
+    font-size: 33px;
+    font-weight: 100;
+    padding: 5px;
+}
+
+.bottom-article > #paragrafo-article-bottom {
+    color: #8583838e;
+    font-style: italic;
+    padding: 10px;
+}
+
+.bottom-contato-form {
+    width: 66vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 10px;
+}
+
+.contactos > p {
+    padding: 3px;
+}
+
+.contactos-symbols {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones-article-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border-color: rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+}
+
+#iemail {
+    padding: 8px;
+}
+
+#inome {
+    padding: 8px;
+}
+
+#imensagem {
+    width: 100%;
+    margin: 7px 0px;
+    padding: 8px;
+}
+
+
+.form > form > input[type="submit"] {
+    border-radius: 1px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    float: right;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9da2d;
+    text-align: center;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.redes-sociais {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.redes-sociais > a {
+    padding: 0px 2px;
+}
+
+.redes-sociais > a > img {
+    width: 20px;
+}
+
+.creator {
+    color: rgba(0, 0, 0, 0.384);
+    padding-top: 10px;
+}
+
+.creator > p > a {
+    color: rgba(0, 0, 0, 0.384);
+}
